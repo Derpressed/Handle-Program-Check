@@ -1,3 +1,3 @@
-# Handle-Program-Check
+# ExternMega.RO
 
-This program exists for education use only.
+For mine and everyone else' education use
