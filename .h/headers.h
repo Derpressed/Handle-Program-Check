@@ -1,7 +1,11 @@
-#ifndef PROCESS_H
-#define PROCESS_H
+#ifndef HEADERS_H
+#define HEADERS_H
 
 #include <windows.h>
+#include <stdint.h>
+
+
+#define DEFAULT_PROCESS_PERMS (PROCESS_VM_READ)
 
 // Struct for our program of type Process
 typedef struct {
@@ -28,5 +32,8 @@ int getProcessModule(Process *program);
 
 // Print out every value of our Process struct
 void printStruct(Process *program);
+
+int readAtAddr(Process* prog, LPCVOID addr, uint8_t* data);
+
 
 #endif
